@@ -1,0 +1,28 @@
+_id: req_44023dfd353f4ec9b132cae3068560aa
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query GetOfficesByCountryCode($countryCode: String!)
+    {\n  officesByCountryCode(countryCode: $countryCode) {\n    items
+    {\n      id\n      name\n    }\n  }\n}\n","variables":{"countryCode":"FR"}}'
+created: 1594826179292
+description: ""
+headers:
+  - id: pair_8e499ea2771049a4b85c05bf87aa657a
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594826179292
+method: POST
+modified: 1594833387494
+name: officeListByCountry
+parameters: []
+parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"
