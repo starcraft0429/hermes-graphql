@@ -1,0 +1,37 @@
+_id: req_66fe7da61d2e4554b22ee75deba7e9af
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query fsa($id: String!) {\n  fsa(id: $id)
+    {\n    fsaId\n    fsaName\n    fsaIndex\n    type\n    status\n    country
+    {\n      countryId\n      name\n    }\n    sectors
+    {\n      sectorId\n      sectorName\n      subSectors
+    {\n        subsectorId\n        subsectorName\n      }\n    }\n    subsectors
+    {\n      subsectorId\n      subsectorName\n    }\n    framework
+    {\n      frmId\n      framework\n    }\n    sections{\n      sectionId\n      sectionName\n    }\n    partSections{\n      sectionId\n      sectionName\n    }\n    categories{\n      categoryId\n      categoryName\n    }\n    centralFsas{\n      fsaId\n      fsaName\n    }\n    material\n    isActive\n    analyticalReviews
+    {\n      arId\n      arName\n      category{\n        categoryId\n        categoryName\n      }\n    }\n    subFsas{\n      fsaId\n      fsaName\n      fsaIndex\n      type\n      status\n      country
+    {\n        countryId\n        name\n      }\n      framework
+    {\n        frmId\n        framework\n      }\n      sectors
+    {\n        sectorId\n        sectorName\n      }\n      subsectors
+    {\n        subsectorId\n        subsectorName\n      }\n    }\n  }\n}","variables":{"id":"CENTRAL-FSA-105066"},"operationName":"fsa"}'
+created: 1594376524503
+description: ""
+headers:
+  - id: pair_8029e313fd5b41309d84b3621b08522f
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594376524503
+method: POST
+modified: 1594622159338
+name: GetFSAItem
+parameters: []
+parentId: fld_9fcf6558361c43f59be9c7a8198c5907
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{base_url}}"

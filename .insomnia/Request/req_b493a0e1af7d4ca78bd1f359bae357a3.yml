@@ -1,0 +1,35 @@
+_id: req_b493a0e1af7d4ca78bd1f359bae357a3
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation upsertRisk(\n  $id: String,\n  $name:
+    String!,\n  $status: String,\n  $description: String,\n  $country:
+    MExdCountryInput,\n  $sectors: [MExdLibSectorInput!]!,\n  $subSectors:
+    [MExdLibSubsectorInput!]!,\n  $frameworks: [MExdFrameworkInput!]!,\n  $fSAs:
+    [MExdFsaIfrLibInput!]!,\n) {\n  upsertRisk(\n    id: $id,\n    name:
+    $name,\n    status: $status,\n    description: $description,\n    country:
+    $country,\n    sectors: $sectors,\n    subSectors:
+    $subSectors,\n    frameworks: $frameworks,\n    fSAs: $fSAs,\n  )
+    {\n    rmmId\n  }\n}\n","variables":{"id":"3cc495ac-bf5c-11ea-923f-0242ac120006","name":"upsertRisk","status":"2","description":"note
+    description","country":{"id":1},"sectors":[{"sectorId":"SECTOR-100003"},{"sectorId":"SECTOR-100010"}],"subSectors":[{"subsectorId":"SUBSECTOR-100004"},{"subsectorId":"SUBSECTOR-100005"}],"frameworks":[{"frmId":"1"},{"frmId":"2"}],"fSAs":[{"fsaId":"CENTRAL-FSA-104996"},{"fsaId":"100-FSA-141108"}]},"operationName":"upsertRisk"}'
+created: 1593912531526
+description: ""
+headers:
+  - id: pair_02be7935b6c24ff1b2050fef1e19e402
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1593912531526
+method: POST
+modified: 1594705344246
+name: UpsertRisk
+parameters: []
+parentId: fld_aa1976eff639476b867350b0ead18d1d
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

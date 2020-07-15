@@ -1,0 +1,28 @@
+_id: req_626582e6252f4b009df52298aff7b54d
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query getCountries {\n  countries {\n    items
+    {\n      countryId,\n      name\n    }
+    \n  }\n}","operationName":"getCountries"}'
+created: 1593794421522
+description: ""
+headers:
+  - id: pair_33998666e8564bf180ffa3d2b6c6bf47
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1593839437261
+method: POST
+modified: 1594374413617
+name: GetCountries
+parameters: []
+parentId: fld_6d03179f251541b2b1b096422949d956
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

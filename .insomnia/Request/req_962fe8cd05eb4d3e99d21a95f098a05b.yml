@@ -1,0 +1,28 @@
+_id: req_962fe8cd05eb4d3e99d21a95f098a05b
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation CreateFramework($name: String!, $country:
+    MExdCountryInput) {\n  createFramework(name: $name, country: $country)
+    {\n    frmId\n  }\n}\n","variables":{"name":"IFRSS","country":{"id":1}}}'
+created: 1594047816370
+description: ""
+headers:
+  - id: pair_4af5515161b74588aa452cec69fc531e
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594047816370
+method: POST
+modified: 1594050692552
+name: CreateFramework
+parameters: []
+parentId: fld_adba1a6994c6419aa34b2d27aa816fe3
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

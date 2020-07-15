@@ -1,0 +1,26 @@
+_id: req_194a7f6d757a403b969fc89a23edc32b
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"","variables":{"country":null}}'
+created: 1594437934370
+description: ""
+headers:
+  - id: pair_fb628d86bb194f85845381c98264aece
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594437934370
+method: POST
+modified: 1594734506720
+name: CentralFSAList
+parameters: []
+parentId: fld_9fcf6558361c43f59be9c7a8198c5907
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{base_url}}"

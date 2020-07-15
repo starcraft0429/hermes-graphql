@@ -1,0 +1,27 @@
+_id: req_b358a9c1801f43ac9f0a56ab1bc5b58e
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query conditionList {\n  conditionList {\n    items
+    {\n      conMasterPackId\n      conditionName\n    }\n  }\n}","operationName":"conditionList"}'
+created: 1594181356793
+description: ""
+headers:
+  - id: pair_1ecaae2b317846bbad52dc38cfbbf5f8
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594181356793
+method: POST
+modified: 1594205499397
+name: Conditions
+parameters: []
+parentId: fld_b23bbd050d71435980dca7ea6a192b27
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

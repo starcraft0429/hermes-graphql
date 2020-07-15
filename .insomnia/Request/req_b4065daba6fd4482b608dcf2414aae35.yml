@@ -1,0 +1,28 @@
+_id: req_b4065daba6fd4482b608dcf2414aae35
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query checkFrameworkNameAvailability($name: String!, $id:
+    String) {\n  checkFrameworkNameAvailability(name: $name, id:
+    $id)\n}\n","variables":{"name":"IFRSSS"},"operationName":"checkFrameworkNameAvailability"}'
+created: 1594037074207
+description: ""
+headers:
+  - id: pair_e574baa82165470a9caa8f14b8e4d557
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594037074207
+method: POST
+modified: 1594134110963
+name: ValidateFrameworkUnique
+parameters: []
+parentId: fld_adba1a6994c6419aa34b2d27aa816fe3
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

@@ -1,0 +1,32 @@
+_id: req_caf611717595408380bdb7e76156a4c0
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation upsertSector(\n  $id: String,\n  $name:
+    String!,\n  $status: String,\n  $help: String,\n  $country:
+    MExdCountryInput,\n) {\n  upsertSector(\n    id: $id,\n    name:
+    $name,\n    status: $status,\n    help: $help,\n    country: $country,\n  )
+    {\n    sectorId\n  }\n}\n","variables":{"id":"5afa70fa-bb02-4f5e-9dd7-33d9895f1fa2","name":"upsert
+    sector","status":"3","help":"help
+    description","country":null},"operationName":"upsertSector"}'
+created: 1594077141595
+description: ""
+headers:
+  - id: pair_0000b54527b24d01be57ac8c8905820f
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594077141595
+method: POST
+modified: 1594080198683
+name: UpsertSector
+parameters: []
+parentId: fld_a35f78a346324fa1904d4e22353934ed
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

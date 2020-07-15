@@ -1,0 +1,27 @@
+_id: req_3689c3db98e04a6dad05411dd0cb94d8
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query GetPartners {\n  partners {\n    items
+    {\n      userId\n      userName\n      firstName\n      lastName\n    }\n    count\n  }\n}\n"}'
+created: 1594810197597
+description: ""
+headers:
+  - id: pair_83935990e1e84b3887bd9fceb6635b0a
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594810197597
+method: POST
+modified: 1594817393542
+name: parteners.query
+parameters: []
+parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

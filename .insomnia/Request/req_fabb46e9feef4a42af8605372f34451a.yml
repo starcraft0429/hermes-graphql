@@ -1,0 +1,31 @@
+_id: req_fabb46e9feef4a42af8605372f34451a
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query searchSectors(\n  $search: String\n  $isLocalMode:
+    Boolean\n  $country: MExdCountryInput\n  $limit: Int!\n  $offset: Int!\n)
+    {\n  searchSectors(search: $search, isLocalMode: $isLocalMode, country:
+    $country) {\n    count\n    items(limit: $limit, offset: $offset)
+    {\n      sectorId\n      sectorName\n      sectorStatus\n      country
+    {\n        name\n      }\n    }\n  }\n}\n","variables":{"limit":100,"offset":0,"search":"","isLocalMode":null,"country":{"id":1}},"operationName":"searchSectors"}'
+created: 1594071035548
+description: ""
+headers:
+  - id: pair_34f1fc00c46543ea83ab6d502b0f6327
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594071035548
+method: POST
+modified: 1594733053000
+name: SearchSectors
+parameters: []
+parentId: fld_a35f78a346324fa1904d4e22353934ed
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

@@ -1,0 +1,29 @@
+_id: req_8e268e232c30412d89601e03b4b724fb
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query getProceduresStatuses($listName: String!)
+    {\n  listOfValue(listName: $listName) {\n    items
+    {\n      storedValue,\n      displayedValue\n    }
+    \n  }\n}","variables":{"listName":"MS_EXD_PROC_TYPE"},"operationName":"getProceduresStatuses"}'
+created: 1593768874935
+description: ""
+headers:
+  - id: pair_5de8766402df454082964f3c15a6a722
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1593768874935
+method: POST
+modified: 1594162807667
+name: ListOfValue
+parameters: []
+parentId: fld_6d03179f251541b2b1b096422949d956
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

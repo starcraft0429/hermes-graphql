@@ -1,0 +1,30 @@
+_id: req_3eb8b2e62313462db99577fc2bd3b841
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query fsaList(\n  $search: String,\n  $country:
+    MExdCountryInput,\n  $sectors: [String!],\n  $subsectors: [String!],\n)
+    {\n  fsaList(\n    search: $search,\n    country: $country,\n    sectors:
+    $sectors,\n    subsectors: $subsectors,\n  ) {\n    count\n    items
+    {\n      fsaId\n      fsaName\n      country{\n        name\n      }\n    }\n  }\n}\n","variables":{"country":{"id":1},"sectors":["SECTOR-100002","SECTOR-100003"],"subsectors":["SUBSECTOR-100002","SUBSECTOR-100003"]},"operationName":"fsaList"}'
+created: 1594640674553
+description: ""
+headers:
+  - id: pair_48143761f5ed414893cabfa3703203ef
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594640674553
+method: POST
+modified: 1594642142512
+name: fsaList
+parameters: []
+parentId: fld_b23bbd050d71435980dca7ea6a192b27
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

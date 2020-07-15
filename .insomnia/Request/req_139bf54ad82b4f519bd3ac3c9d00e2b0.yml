@@ -1,0 +1,29 @@
+_id: req_139bf54ad82b4f519bd3ac3c9d00e2b0
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query myEngagementsAsTeamMember($limit: Int!, $offset:
+    Int!){\n  myEngagementsAsTeamMember{\n    count\n    items(limit: $limit,
+    offset: $offset)
+    {\n      id\n      missionName\n      entity{\n        entityName\n      }\n      engagementType\n      typeOfService\n      masterFile{\n        name\n      }\n      status{\n        id\n        label\n      }\n    }\n  }\n}\n","variables":{"limit":10,"offset":0},"operationName":"myEngagementsAsTeamMember"}'
+created: 1594804321949
+description: ""
+headers:
+  - id: pair_f74a23a291c943c8a6f272094be16a05
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594804321949
+method: POST
+modified: 1594817261073
+name: engagement.team.query
+parameters: []
+parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

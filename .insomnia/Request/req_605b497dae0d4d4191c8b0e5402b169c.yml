@@ -1,0 +1,35 @@
+_id: req_605b497dae0d4d4191c8b0e5402b169c
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query procedures(\n  $search: String\n  $isLocalMode:
+    Boolean\n  $country: MExdCountryInput\n  $limit: Int!\n  $offset: Int!\n)
+    {\n  procedures(search: $search, isLocalMode: $isLocalMode, country:
+    $country) {\n    count\n    items(limit: $limit, offset: $offset)
+    {\n      procedureId\n      procDesc\n      procType\n      procStatus\n      sectors
+    {\n        sectorId\n        sectorName\n      }\n      subsectors
+    {\n        subsectorId\n        subsectorName\n      }\n      frameworks
+    {\n        frmId\n        framework\n      }\n      fSAs
+    {\n        fsaId\n        fsaName\n      }\n      country
+    {\n        name\n      }\n      assertions\n    }\n  }\n}","variables":{"limit":10,"offset":0,"search":"","isLocalMode":null,"country":null},"operationName":"procedures"}'
+created: 1593801177391
+description: ""
+headers:
+  - id: pair_83b965b31fe7409585b6c6b585254190
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1593804453356.5
+method: POST
+modified: 1594698158598
+name: GetProcedures
+parameters: []
+parentId: fld_b23bbd050d71435980dca7ea6a192b27
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: http://api.hermes.localhost/graphql

@@ -1,0 +1,29 @@
+_id: req_90298cae8f224eeab88d3e235e7fc099
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query fsaSectionList($search: String, $country:
+    MExdCountryInput) {\n  fsaSectionList(search: $search, country: $country)
+    {\n    count\n    items {\n      sectionId,\n      sectionName\n    }
+    \n  }\n}","variables":{"country":{"id":73}},"operationName":"fsaSectionList"}'
+created: 1594374271178
+description: ""
+headers:
+  - id: pair_9e4ede3494714285a320872376ab2c22
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594374271178
+method: POST
+modified: 1594735264148
+name: fsaSectionList
+parameters: []
+parentId: fld_9fcf6558361c43f59be9c7a8198c5907
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{base_url}}"

@@ -1,0 +1,32 @@
+_id: req_7515e0d1151948d6b0a08bb7fa90ad97
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query getFSAs(\n  $limit: Int!,\n  $offset: Int!,\n  $search:
+    String!,\n  $isLocalMode: Boolean,\n  $country: MExdCountryInput,\n)
+    {\n  fsas(\n    search: $search,\n    isLocalMode:
+    $isLocalMode,\n    country: $country,\n  ) {\n    count\n    items(limit:
+    $limit, offset: $offset)
+    {\n      fsaId,\n      fsaName,\n      type,\n      status,\n      country{\n        countryId\n        name\n      }\n      framework{\n        frmId\n        framework\n      }\n      sectors{\n        sectorId,\n        sectorName\n      }\n      subsectors{\n        subsectorId\n        subsectorName\n      }\n    }
+    \n  }\n}","variables":{"limit":10,"offset":0,"search":"FSA","country":{"id":1}},"operationName":"getFSAs"}'
+created: 1593839840004
+description: ""
+headers:
+  - id: pair_454aec5052a84216a9e10db88cd5c0fd
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1593839840004
+method: POST
+modified: 1594807672970
+name: GetFSAs
+parameters: []
+parentId: fld_9fcf6558361c43f59be9c7a8198c5907
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

@@ -1,0 +1,49 @@
+_id: req_5b9b3154c82240c685a0b45ba49ec3bf
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation upsertProcedure(\n  $id: String,\n  $procDesc:
+    String!,\n  $procDetailedDesc: String,\n  $country:
+    MExdCountryInput,\n  $procStatus: String!,\n  $mandProc:
+    String!,\n  $condition: MExdConditionBuildInput,  \n  $sectors:
+    [MExdLibSectorInput!]!,\n  $subSectors:
+    [MExdLibSubsectorInput!]!,\n  $frameworks: [MExdFrameworkInput!]!,\n  $fSAs:
+    [MExdFsaIfrLibInput!],\n  $risks: [MExdRmmInput!],\n  $eLRs:
+    [String!],\n  $transSpecAreas: String,\n  $assertions:
+    [String!]!,\n  $procType: String!,\n  $procHelp: String,\n  $isActive:
+    Boolean!\n) {\n  upsertProcedure(\n    id: $id,\n    procDesc:
+    $procDesc,\n    procDetailedDesc: $procDetailedDesc,\n    country:
+    $country,\n    procStatus: $procStatus,\n    mandProc:
+    $mandProc,\n    condition: $condition,    \n    sectors:
+    $sectors,\n    subSectors: $subSectors,\n    frameworks:
+    $frameworks,\n    fSAs: $fSAs,\n    risks: $risks,\n    eLRs:
+    $eLRs,\n    transSpecAreas: $transSpecAreas,\n    assertions:
+    $assertions,\n    procType: $procType,\n    procHelp:
+    $procHelp,\n    isActive: $isActive,\n  )
+    {\n    procedureId\n  }\n}\n","variables":{"id":"6784d916-c135-11ea-bfc4-0242ac140007","procDesc":"upsert
+    2 proc asdf","procDetailedDesc":"proc detailed desc
+    asdf","country":{"id":73},"procStatus":"1","mandProc":"11","condition":{"conMasterPackId":"CON-114810"},"sectors":[{"sectorId":"SECTOR-100009"},{"sectorId":"SECTOR-100010"}],"subSectors":[{"subsectorId":"SUBSECTOR-100004"},{"subsectorId":"SUBSECTOR-100005"}],"frameworks":[{"frmId":"1"},{"frmId":"2"}],"fSAs":[{"fsaName":"Central
+    FSA","fsaId":"CENTRAL-FSA-104996"},{"fsaName":"BN FS
+    167","fsaId":"100-FSA-141108"}],"risks":[{"rmmId":"RMM-100002"}],"eLRs":["MS_EXD_GOING_CONCERN"],"transSpecAreas":"1","assertions":["1","3","5"],"procType":"1","procHelp":"help
+    here","isActive":true},"operationName":"upsertProcedure"}'
+created: 1594217528766
+description: ""
+headers:
+  - id: pair_d5db530639864a1f805253d9ae176f7b
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594217528766
+method: POST
+modified: 1594705754807
+name: UpsertProcedure
+parameters: []
+parentId: fld_b23bbd050d71435980dca7ea6a192b27
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

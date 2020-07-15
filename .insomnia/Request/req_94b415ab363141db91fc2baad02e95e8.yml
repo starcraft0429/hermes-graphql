@@ -1,0 +1,29 @@
+_id: req_94b415ab363141db91fc2baad02e95e8
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query procedure($id: String!) {\n  procedure(id: $id)
+    {\n    procedureId\n    procDesc\n    procDetailedDesc\n    procType\n    procStatus\n    mandProc\n    procHelp\n    sectors{\n      sectorId,\n      sectorName\n      subSectors{\n        subsectorId\n        subsectorName\n      }\n    },\n    subsectors{\n      subsectorId\n      subsectorName\n    },\n    frameworks
+    {\n      frmId,\n      framework\n    },\n    fSAs
+    {\n      fsaId,\n      fsaName\n    }\n    country{\n      name\n      countryId\n    }\n    risks{\n      rmmId\n      rmmName\n    }\n    eLRs\n    assertions\n    transSpecAreas\n    condition{\n      conMasterPackId\n      conditionName\n    }\n    isActive\n  }\n}","variables":{"id":"PROCEDURE-100002"},"operationName":"procedure"}'
+created: 1593820038598
+description: ""
+headers:
+  - id: pair_9c957f530b99406fbab29bdb06582f5e
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1593804453406.5
+method: POST
+modified: 1594326885501
+name: ProcedureItem
+parameters: []
+parentId: fld_b23bbd050d71435980dca7ea6a192b27
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: api.hermes.localhost/graphql

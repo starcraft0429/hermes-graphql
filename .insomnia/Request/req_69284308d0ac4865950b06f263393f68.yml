@@ -1,0 +1,31 @@
+_id: req_69284308d0ac4865950b06f263393f68
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query Frameworks(\n  $search: String!\n  $country:
+    MExdCountryInput\n  $isLocalMode: Boolean\n  $limit: Int!\n  $offset:
+    Int!\n) {\n  frameworks(search: $search, country: $country, isLocalMode:
+    $isLocalMode) {\n    count\n    items(limit: $limit, offset: $offset)
+    {\n      frmId\n      framework\n      isActive\n      country
+    {\n        name\n      }\n    }\n  }\n}\n","variables":{"limit":10,"offset":0,"search":"","isLocalMode":true,"country":null},"operationName":"Frameworks"}'
+created: 1594034249589
+description: ""
+headers:
+  - id: pair_9a130e2e426a4a8b8cdc8ed49d0abc4c
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594034249589
+method: POST
+modified: 1594703813327
+name: Frameworks
+parameters: []
+parentId: fld_adba1a6994c6419aa34b2d27aa816fe3
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

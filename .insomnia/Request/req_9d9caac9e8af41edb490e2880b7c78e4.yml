@@ -1,0 +1,36 @@
+_id: req_9d9caac9e8af41edb490e2880b7c78e4
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query risks(\n  $search: String\n  $isLocalMode:
+    Boolean\n  $country: MExdCountryInput\n  $limit: Int!\n  $offset: Int!\n)
+    {\n  risks(search: $search, isLocalMode: $isLocalMode, country: $country)
+    {\n    count\n    items(limit: $limit, offset: $offset)
+    {\n      rmmId\n      rmmName\n#       rmmStatus\n#       markInactive\n      country
+    {\n        name\n      }\n#       frameworks
+    {\n#         frmId\n#         framework\n#       }\n#       procedures
+    {\n#         procedureId\n#         procDesc\n#       }\n      sectors
+    {\n        sectorId\n        sectorName\n      }\n      subSectors
+    {\n        subsectorId\n        subsectorName\n      }\n      fSAs
+    {\n        fsaName\n        fsaId\n      }\n    }\n  }\n}\n","variables":{"limit":100,"offset":0,"search":"","isLocalMode":true,"country":{"id":1}},"operationName":"risks"}'
+created: 1589182581098
+description: ""
+headers:
+  - id: pair_0a5f71ca3aa04f39a0c38b7897f611f9
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1592567019468
+method: POST
+modified: 1594731277856
+name: RiskSearchQuery
+parameters: []
+parentId: fld_aa1976eff639476b867350b0ead18d1d
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

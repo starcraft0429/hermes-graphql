@@ -1,0 +1,27 @@
+_id: req_c7a7ae0a49da4ad4a2d7ff51c4604fa5
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query tranSpecAreaList {\n  tranSpecAreaList {\n    items
+    {\n      storedvalue\n      displayvalue\n    }\n  }\n}","operationName":"tranSpecAreaList"}'
+created: 1594200481560
+description: ""
+headers:
+  - id: pair_f968f601cbc440f58627a58526a136aa
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594200481560
+method: POST
+modified: 1594200984306
+name: GetTranSpecArea
+parameters: []
+parentId: fld_b23bbd050d71435980dca7ea6a192b27
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

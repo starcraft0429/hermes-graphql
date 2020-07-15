@@ -1,0 +1,31 @@
+_id: req_a81dd1c0b74a474d905fa2019add2d68
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query fsaCategorieList(\n  $country:
+    MExdCountryInput,\n  $sectors: [String!],\n  $subsectors:
+    [String!],\n  $framework: String,\n) {\n  fsaCategorieList(\n    country:
+    $country,\n    sectors: $sectors,\n    subsectors:
+    $subsectors,\n    framework: $framework,\n  ) {\n    count\n    items
+    {\n      categoryId\n      categoryName\n      country\n    }\n  }\n}\n","variables":{"country":null},"operationName":"fsaCategorieList"}'
+created: 1594338256146
+description: ""
+headers:
+  - id: pair_33df6a7cf896463c86235b77e6a037e9
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594338256146
+method: POST
+modified: 1594633807468
+name: GetFSACategoryList
+parameters: []
+parentId: fld_9fcf6558361c43f59be9c7a8198c5907
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

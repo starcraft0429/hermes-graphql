@@ -1,0 +1,27 @@
+_id: req_f6beb3462e684c28b3d13e180bc958f7
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query subsector($id: String!) {\n  subsector(id: $id)
+    {\n    subsectorId,\n    subsectorName,\n    subsectorStatus,\n    subsectorHelp,\n    country{\n      countryId\n      name\n    }\n    sectors{\n      sectorId\n      sectorName\n    }\n  }\n}","variables":{"id":"SUBSECTOR-100004"},"operationName":"subsector"}'
+created: 1594079732303
+description: ""
+headers:
+  - id: pair_51d33cf1510b466a983d7f4ede93fdf3
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594073980985
+method: POST
+modified: 1594084672336
+name: SubsectorItem
+parameters: []
+parentId: fld_1cad783e2bb34db39fa26cd55f4eb055
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

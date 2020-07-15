@@ -1,0 +1,29 @@
+_id: req_c4725063529b4b06aed67e5656de1bba
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query getSectors($search: String!, $country: MExdCountryInput)
+    {\n  sectors(search: $search, country: $country) {\n    items
+    {\n      sectorId,\n      sectorName,\n      subSectors{\n        subsectorId,\n        subsectorName\n      }\n    }
+    \n  }\n}","variables":{"search":"Sector","country":{"id":1}},"operationName":"getSectors"}'
+created: 1593839692681
+description: ""
+headers:
+  - id: pair_b1919dd8733042649bf1af09af187c26
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1593839692681
+method: POST
+modified: 1594733012644
+name: GetSectors
+parameters: []
+parentId: fld_a35f78a346324fa1904d4e22353934ed
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

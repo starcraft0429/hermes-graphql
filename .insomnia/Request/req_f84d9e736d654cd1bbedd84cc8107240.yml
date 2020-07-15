@@ -1,0 +1,33 @@
+_id: req_f84d9e736d654cd1bbedd84cc8107240
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation upsertSubsector(\n  $id: String,\n  $name:
+    String!,\n  $status: String,\n  $help: String,\n  $country:
+    MExdCountryInput,\n  $sectors: [MExdLibSectorInput!],\n)
+    {\n  upsertSubsector(\n    id: $id,\n    name: $name,\n    status:
+    $status,\n    help: $help,\n    country: $country,\n    sectors:
+    $sectors,\n  )
+    {\n    subsectorId\n  }\n}\n","variables":{"id":"d85c9d8e-e810-4fc4-8b28-585188fbcca4","name":"createSubSec","status":"1","help":"help
+    desc","country":null,"sectors":[{"sectorId":"SECTOR-100003"},{"sectorId":"SECTOR-100009"},{"sectorId":"SECTOR-100010"}]},"operationName":"upsertSubsector"}'
+created: 1594079732308
+description: ""
+headers:
+  - id: pair_0000b54527b24d01be57ac8c8905820f
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594077141595
+method: POST
+modified: 1594152277284
+name: UpsertSubsector
+parameters: []
+parentId: fld_1cad783e2bb34db39fa26cd55f4eb055
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

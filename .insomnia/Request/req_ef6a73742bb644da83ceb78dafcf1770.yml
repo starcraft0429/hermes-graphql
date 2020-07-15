@@ -1,0 +1,32 @@
+_id: req_ef6a73742bb644da83ceb78dafcf1770
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query searchSubsectors(\n  $search: String\n  $isLocalMode:
+    Boolean\n  $country: MExdCountryInput\n  $limit: Int!\n  $offset: Int!\n)
+    {\n  searchSubsectors(\n    search: $search\n    isLocalMode:
+    $isLocalMode\n    country: $country\n  ) {\n    count\n    items(limit:
+    $limit, offset: $offset)
+    {\n      subsectorId\n      subsectorName\n      subsectorStatus\n      country
+    {\n        name\n      }\n    }\n  }\n}\n","variables":{"limit":100,"offset":0,"search":"","isLocalMode":null,"country":{"id":1}},"operationName":"searchSubsectors"}'
+created: 1594079732299
+description: ""
+headers:
+  - id: pair_34f1fc00c46543ea83ab6d502b0f6327
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594071035548
+method: POST
+modified: 1594698239581
+name: SearchSubsectors
+parameters: []
+parentId: fld_1cad783e2bb34db39fa26cd55f4eb055
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

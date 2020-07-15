@@ -1,0 +1,27 @@
+_id: req_52953ecd5df54a5da60c753f7d852e31
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query sector($id: String!) {\n  sector(id: $id)
+    {\n    sectorId,\n    sectorName,\n    sectorStatus,\n    sectorHelp,\n    country{\n      countryId\n      name\n    }\n  }\n}","variables":{"id":"SECTOR-100013"},"operationName":"sector"}'
+created: 1594074295077
+description: ""
+headers:
+  - id: pair_d2f87534e12143608bd250d7330bacc0
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594074295077
+method: POST
+modified: 1594077956766
+name: SectorItem
+parameters: []
+parentId: fld_a35f78a346324fa1904d4e22353934ed
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

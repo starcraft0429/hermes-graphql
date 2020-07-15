@@ -1,0 +1,10 @@
+_id: fld_6d03179f251541b2b1b096422949d956
+created: 1593768836546
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1593768836547
+modified: 1593768836546
+name: ListOfValues
+parentId: wrk_18bac6f2bf6d4ef896b310e1b5ee0633
+type: RequestGroup

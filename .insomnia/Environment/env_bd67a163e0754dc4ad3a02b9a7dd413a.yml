@@ -1,0 +1,14 @@
+_id: env_bd67a163e0754dc4ad3a02b9a7dd413a
+color: null
+created: 1593694886753
+data:
+  base_url: http://api.hermes.localhost/graphql
+dataPropertyOrder:
+  "&":
+    - base_url
+isPrivate: false
+metaSortKey: 1593694886753
+modified: 1593695069223
+name: Local
+parentId: env_a35e7ba8fdfeaa9590bf2ea5266adb772112bf08
+type: Environment

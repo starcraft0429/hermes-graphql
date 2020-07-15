@@ -1,0 +1,30 @@
+_id: req_ddb82b10893a4be8b3d160b77fbbe132
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query GetEngagament($id: String!) {\n  engagement(id: $id)
+    {\n    id\n    missionName\n    endDate\n    entity
+    {\n      entityId\n    }\n    engagementType\n    typeOfService\n    masterFile
+    {\n      id\n      name\n      country\n    }\n    officeObj{\n      id\n      name\n    }\n    managementUnit{\n      name\n      unitId\n      officeId\n    }\n    status
+    {\n      id\n      label\n    }\n    accountFramework{\n      frmId\n      framework\n    }\n    leadPartner{\n      userId\n      userName\n    }\n    backOfficeJobNo\n    regulatorNumber\n    missionDesc\n    dateOfFirstAssignment\n    isFirstYearsAudit\n    dateOfRenewal\n    wonThroughTender\n  }\n}\n","variables":{"id":"MSN-0000105236"},"operationName":"GetEngagament"}'
+created: 1594804566558
+description: ""
+headers:
+  - id: pair_5d17b1db5cda40128e935b400675686b
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594804566558
+method: POST
+modified: 1594820290416
+name: engagement.query
+parameters: []
+parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"
