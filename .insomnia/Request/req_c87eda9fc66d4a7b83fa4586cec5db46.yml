@@ -1,0 +1,27 @@
+_id: req_c87eda9fc66d4a7b83fa4586cec5db46
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query GetMasterFilesQuery {\n  masterFiles {\n    items
+    {\n      id\n      name\n      country\n    }\n    count\n  }\n}\n"}'
+created: 1594822134186
+description: ""
+headers:
+  - id: pair_a5ba7d5a4e9a45e28bd7203d11fa2bb7
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594822134186
+method: POST
+modified: 1594822143788
+name: masterfiles.list
+parameters: []
+parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"
