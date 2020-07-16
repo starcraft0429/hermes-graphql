@@ -2,28 +2,29 @@ _id: req_f716d8c52ab04ff495b4fb00421ac563
 authentication: {}
 body:
   mimeType: application/graphql
-  text: '{"query":"mutation upsertEngagement(\n  $id: String,\n  $entity:
-    MExaEntityCardInput!,\n  $missionName: String!,\n  $leadPartner:
-    SiUserTInput!,\n  $masterFile: MExdLocalCmfInput!,\n  $endDate:
-    DateTime!,\n  $officeObj: MExaOfficeInfoInput!,\n  $managementUnit:
+  text: '{"query":"mutation upsertEngagement(\n  $missionCard:
+    MExaMissionCardInput,\n  $entity: MExaEntityCardInput!,\n  $missionName:
+    String!,\n  $leadPartner: SiUserTInput!,\n  $masterFile:
+    MExdLocalCmfInput!,\n  $endDate: DateTime!,\n  $officeObj:
+    MExaOfficeInfoInput!,\n  $managementUnit:
     MExaMgmtUnitInput!,\n  $engagementType: String,\n  $typeOfService:
     String,\n  $backOfficeJobNo: String,\n  $regulatorNumber:
     String,\n  $missionDesc: String,\n  $dateOfFirstAssignment:
     DateTime,\n  $isFirstYearsAudit: Boolean,\n  $dateOfRenewal:
     DateTime,\n  $wonThroughTender: Boolean,\n  $accountFramework:
-    MExdFrameworkInput,\n) {\n  upsertEngagement(\n    id: $id,\n    entity:
-    $entity,\n    missionName: $missionName,\n    leadPartner:
-    $leadPartner,\n    masterFile: $masterFile,\n    endDate:
-    $endDate,\n    officeObj: $officeObj,\n    managementUnit:
-    $managementUnit,\n    engagementType: $engagementType,\n    typeOfService:
-    $typeOfService,\n    backOfficeJobNo:
+    MExdFrameworkInput,\n) {\n  upsertEngagement(\n    missionCard:
+    $missionCard,\n    entity: $entity,\n    missionName:
+    $missionName,\n    leadPartner: $leadPartner,\n    masterFile:
+    $masterFile,\n    endDate: $endDate,\n    officeObj:
+    $officeObj,\n    managementUnit: $managementUnit,\n    engagementType:
+    $engagementType,\n    typeOfService: $typeOfService,\n    backOfficeJobNo:
     $backOfficeJobNo,\n    regulatorNumber: $regulatorNumber,\n    missionDesc:
     $missionDesc,\n    dateOfFirstAssignment:
     $dateOfFirstAssignment,\n    isFirstYearsAudit:
     $isFirstYearsAudit,\n    dateOfRenewal:
     $dateOfRenewal,\n    wonThroughTender:
     $wonThroughTender,\n    accountFramework: $accountFramework,\n  )
-    {\n    id\n  }\n}\n","variables":{"entity":{"entityId":"ENTITY-007743"},"missionName":"Create
+    {\n    id\n  }\n}\n","variables":{"missionCard":{"missionId":"e0eb733d-d5af-4287-9e04-99c8f63b108e"},"entity":{"entityId":"ENTITY-007743"},"missionName":"Create
     Engagement","leadPartner":{"userId":100041},"masterFile":{"id":"LOCAL_CMF-103376"},"endDate":"2020-02-11T00:00:00+00:00","officeObj":{"id":"9648","localeId":1009},"managementUnit":{"unitId":"16","officeId":"9648"},"engagementType":"110","typeOfService":"5","backOfficeJobNo":"backJob1111","regulatorNumber":"reglar-111","missionDesc":"help
     desc","dateOfFirstAssignment":"2020-02-11T00:00:00+00:00","isFirstYearsAudit":false,"dateOfRenewal":null,"wonThroughTender":null,"accountFramework":{"frmId":"1"}},"operationName":"upsertEngagement"}'
 created: 1594884171805
@@ -35,7 +36,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594884171805
 method: POST
-modified: 1594885645101
+modified: 1594912336541
 name: upsertEngagement
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1

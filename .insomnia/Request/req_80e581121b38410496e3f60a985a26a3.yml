@@ -2,19 +2,20 @@ _id: req_80e581121b38410496e3f60a985a26a3
 authentication: {}
 body:
   mimeType: application/graphql
-  text: '{"query":"mutation upsertEntity(\n  $entityId: String,\n  $entityName:
-    String!,\n  $leadPartner: SiUserTInput!,\n  $sector:
-    MExdLibSectorInput!,\n  $subSector: MExdLibSubsectorInput!,\n  $legalForm:
+  text: '{"query":"mutation upsertEntity(\n  $entityCard:
+    MExaEntityCardInput,\n  $entityName: String!,\n  $leadPartner:
+    SiUserTInput!,\n  $sector: MExdLibSectorInput!,\n  $subSector:
+    MExdLibSubsectorInput!,\n  $legalForm:
     MExaEntityLegalFormMapInput!,\n  $nrn: String,\n  $ugn:
     String,\n  $address1: String,\n  $address2: String,\n  $city:
     String,\n  $state: String,\n  $postalCode1: String,\n  $postalCode2:
-    String,\n) {\n  upsertEntity(\n    entityId: $entityId,\n    entityName:
+    String,\n) {\n  upsertEntity(\n    entityCard: $entityCard,\n    entityName:
     $entityName,\n    leadPartner: $leadPartner,\n    sector:
     $sector,\n    subSector: $subSector,\n    legalForm: $legalForm,\n    nrn:
     $nrn,\n    ugn: $ugn,\n    address1: $address1,\n    address2:
     $address2,\n    city: $city,\n    state: $state,\n    postalCode1:
     $postalCode1,\n    postalCode2: $postalCode2,\n  )
-    {\n    entityId\n  }\n}\n","variables":{"entityId":"f684c56e-c2f1-4f2d-978f-d18ecd270da8","entityName":"createEntity","leadPartner":{"userId":100036},"sector":{"sectorId":"SECTOR-100002"},"subSector":{"subsectorId":"SUBSECTOR-100002"},"legalForm":{"legalFormCode":"AFG","countryCode":"AF"},"nrn":"XXX-0014045","ugn":"CKXXX-0014045","address1":"Cook
+    {\n    entityId\n  }\n}\n","variables":{"entityCard":{"entityId":"f684c56e-c2f1-4f2d-978f-d18ecd270da8"},"entityName":"createEntity","leadPartner":{"userId":100036},"sector":{"sectorId":"SECTOR-100002"},"subSector":{"subsectorId":"SUBSECTOR-100002"},"legalForm":{"legalFormCode":"AFG","countryCode":"AF"},"nrn":"XXX-0014045","ugn":"CKXXX-0014045","address1":"Cook
     Entity address 1 ","address2":"Cook Entity address 2","city":"Cook Entity
     City
     ","state":"paris","postalCode1":"123123","postalCode2":"321321"},"operationName":"upsertEntity"}'
@@ -27,7 +28,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594872740478
 method: POST
-modified: 1594884234878
+modified: 1594911889958
 name: upsertEntity
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
