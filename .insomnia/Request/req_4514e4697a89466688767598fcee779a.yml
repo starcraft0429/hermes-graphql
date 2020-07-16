@@ -1,20 +1,21 @@
-_id: req_c87eda9fc66d4a7b83fa4586cec5db46
+_id: req_4514e4697a89466688767598fcee779a
 authentication: {}
 body:
   mimeType: application/graphql
-  text: '{"query":"query GetMasterFilesQuery {\n  masterFiles {\n    items
-    {\n      id\n      name\n      country\n    }\n    count\n  }\n}\n","operationName":"GetMasterFilesQuery"}'
-created: 1594822134186
+  text: '{"query":"query legalFormList($countryCode: String)
+    {\n  legalFormList(countryCode: $countryCode) {\n    items
+    {\n      legalFormCode\n      legalFormDesc\n      countryCode\n    }\n  }\n}\n","operationName":"legalFormList"}'
+created: 1594867022957
 description: ""
 headers:
-  - id: pair_a5ba7d5a4e9a45e28bd7203d11fa2bb7
+  - id: pair_5c87b39b870648269d4a340da979fed3
     name: Content-Type
     value: application/json
 isPrivate: false
-metaSortKey: -1594822134186
+metaSortKey: -1594867022957
 method: POST
-modified: 1594867039766
-name: masterfiles.list
+modified: 1594867445891
+name: legalFormList
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
 settingDisableRenderRequestBody: false
