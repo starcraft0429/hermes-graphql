@@ -3,7 +3,7 @@ authentication: {}
 body:
   mimeType: application/graphql
   text: '{"query":"query getEntity($id: String!) {\n  entity(id: $id)
-    {\n    entityId\n    entityName,\n    nrn\n    ugn\n    address1\n    address2\n    city\n    state\n    postalCode1\n    postalCode2\n    nrnExists\n    sector{\n      sectorId\n      sectorName\n      subSectors{\n        subsectorId\n        subsectorName\n      }\n    }\n    subSector{\n      subsectorId\n      subsectorName\n    }\n    legalForm{\n      countryCode\n      legalFormCode\n      legalFormDesc\n    }\n    leadPartner{\n      userName\n    }\n  }\n}\n","variables":{"id":"ENTITY-008546"},"operationName":"getEntity"}'
+    {\n    entityId\n    entityName,\n    nrn\n    ugn\n    address1\n    address2\n    city\n    state\n    postalCode1\n    postalCode2\n    nrnExists\n    sector{\n      sectorId\n      sectorName\n      subSectors{\n        subsectorId\n        subsectorName\n      }\n    }\n    subSector{\n      subsectorId\n      subsectorName\n    }\n    legalForm{\n      countryCode\n      legalFormCode\n      legalFormDesc\n    }\n    leadPartner{\n      userId\n      userName\n    }\n  }\n}\n","variables":{"id":"f684c56e-c2f1-4f2d-978f-d18ecd270da8"},"operationName":"getEntity"}'
 created: 1594810062712
 description: ""
 headers:
@@ -13,7 +13,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594810062712
 method: POST
-modified: 1594862712804
+modified: 1594874548191
 name: entity.item.query
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
