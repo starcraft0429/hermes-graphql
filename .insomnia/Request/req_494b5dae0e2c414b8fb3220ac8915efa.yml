@@ -1,21 +1,20 @@
-_id: req_eb0d2fda3cff40718adbed194cd840e5
+_id: req_494b5dae0e2c414b8fb3220ac8915efa
 authentication: {}
 body:
   mimeType: application/graphql
-  text: '{"query":"query GetFrameworksByCountryCode($countryCode:
-    String!){\n  frameworksByCountryCode(countryCode:
-    $countryCode){\n    items{\n      frmId,\n      framework\n    }\n  }\n}\n","variables":{"countryCode":"FR"}}'
-created: 1594824921022
+  text: '{"query":"query GetPartners {\n  partners {\n    items
+    {\n      userId\n      userName\n      firstName\n      lastName\n    }\n    count\n  }\n}\n"}'
+created: 1594875146269
 description: ""
 headers:
-  - id: pair_bdcad727888f4217a7a9bc029247d69e
+  - id: pair_3a7a43b66e3043f1986e0085ceac4e46
     name: Content-Type
     value: application/json
 isPrivate: false
-metaSortKey: -1594824921022
+metaSortKey: -1594875146269
 method: POST
-modified: 1594825049935
-name: frameworksByCountryCode
+modified: 1594876605023
+name: partners
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
 settingDisableRenderRequestBody: false
