@@ -3,7 +3,7 @@ authentication: {}
 body:
   mimeType: application/graphql
   text: '{"query":"query trialBalance($id: String!) {\n  trialBalance(id: $id)
-    {\n    tbUuid\n    year\n    category\n    timeDuration\n    startDate\n    endDate\n    doRound\n    mission{\n      id\n      missionName\n    }\n    entity{\n      entityId\n      entityName\n    }\n    uploadedBy\n  }\n}\n","variables":{"id":"775c42ba-c7da-11ea-8c9e-0242ac130008"},"operationName":"trialBalance"}'
+    {\n    tbUuid\n    year\n    category\n    timeDuration\n    startDate\n    endDate\n    doRound\n    uploadedFileName\n  }\n}\n","variables":{"id":"319f2dfc-c837-11ea-b527-0242ac130008"},"operationName":"trialBalance"}'
 created: 1594950189302
 description: ""
 headers:
@@ -13,7 +13,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594950189302
 method: POST
-modified: 1594957275991
+modified: 1594995190619
 name: trialBalanceItem
 parameters: []
 parentId: fld_f3eb0ee627c444bb897915ec3e3a8025
