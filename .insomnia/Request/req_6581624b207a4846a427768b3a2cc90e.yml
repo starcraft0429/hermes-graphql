@@ -1,0 +1,38 @@
+_id: req_6581624b207a4846a427768b3a2cc90e
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation upsertTrialBalance (\n  $trialBalanceFile:
+    Upload!,  \n  $mission: MExaMissionCardInput!,\n  $year:
+    String!,\n  $category: String!,\n  $timeDuration: String,\n  $startDate:
+    DateTime!,\n  $endDate: DateTime!,\n)
+    {\n  upsertTrialBalance(\n    trialBalanceFile:
+    $trialBalanceFile,\n    mission: $mission,\n    year: $year,\n    category:
+    $category,\n    timeDuration: $timeDuration\n    startDate:
+    $startDate,\n    endDate: $endDate,\n  )
+    {\n    tbUuid\n    year\n    category\n    timeDuration\n    startDate\n    endDate\n    doRound\n    mission{\n      id\n      missionName\n    }\n    entity{\n      entityId\n      entityName\n    }\n    uploadedBy\n  }\n}","variables":{"mission":{"missionId":"MSN-0000105530"},"year":"CY","category":"FIN","startDate":"2020-02-02","endDate":"2020-04-04"},"operationName":"upsertTrialBalance"}'
+created: 1594922238596
+description: ""
+headers:
+  - id: pair_7576daf82139454090196e2b2650850a
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1594922238596
+method: POST
+modified: 1594956524682
+name: upsertTrialBalance (WIP)
+parameters:
+  - description: ""
+    id: pair_a43b1c8d8ef041bf9b250cd6793d1b37
+    name: ""
+    value: ""
+parentId: fld_f3eb0ee627c444bb897915ec3e3a8025
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"
