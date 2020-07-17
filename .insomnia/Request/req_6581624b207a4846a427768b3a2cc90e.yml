@@ -5,11 +5,11 @@ body:
   text: '{"query":"mutation upsertTrialBalance (\n  $trialBalanceFile:
     Upload!,  \n  $mission: MExaMissionCardInput!,\n  $year:
     String!,\n  $category: String!,\n  $timeDuration: String,\n  $startDate:
-    DateTime!,\n  $endDate: DateTime!,\n)
+    DateTime!,\n  $endDate: DateTime!,\n  $doRound: Boolean\n)
     {\n  upsertTrialBalance(\n    trialBalanceFile:
     $trialBalanceFile,\n    mission: $mission,\n    year: $year,\n    category:
     $category,\n    timeDuration: $timeDuration\n    startDate:
-    $startDate,\n    endDate: $endDate,\n  )
+    $startDate,\n    endDate: $endDate,\n    doRound: $doRound,\n  )
     {\n    tbUuid\n    year\n    category\n    timeDuration\n    startDate\n    endDate\n    doRound\n    mission{\n      id\n      missionName\n    }\n    entity{\n      entityId\n      entityName\n    }\n    uploadedBy\n  }\n}","variables":{"mission":{"missionId":"MSN-0000105530"},"year":"CY","category":"FIN","startDate":"2020-02-02","endDate":"2020-04-04"},"operationName":"upsertTrialBalance"}'
 created: 1594922238596
 description: ""
@@ -20,7 +20,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594922238596
 method: POST
-modified: 1594956524682
+modified: 1594957412624
 name: upsertTrialBalance (WIP)
 parameters:
   - description: ""
