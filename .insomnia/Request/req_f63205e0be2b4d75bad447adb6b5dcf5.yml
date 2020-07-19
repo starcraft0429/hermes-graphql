@@ -1,0 +1,30 @@
+_id: req_f63205e0be2b4d75bad447adb6b5dcf5
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation addMissionTeam (\n  $temTeamType:
+    MExaTeamRoleMapInput!,\n  $mission: MExaMissionCardInput!\n)
+    {\n  addMissionTeam(\n    temTeamType: $temTeamType,\n    mission:
+    $mission\n  )
+    {\n    id\n  }\n}","variables":{"mission":{"missionId":"MSN-0000105530"},"temTeamType":{"typeOfTeamId":"4"}},"operationName":"addMissionTeam"}'
+created: 1595153036426
+description: ""
+headers:
+  - id: pair_cbe0201de1984bc88d458a59781eb00b
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1595153036426
+method: POST
+modified: 1595153628544
+name: addMissionTeam
+parameters: []
+parentId: fld_f4ebb75fe74540aaa406a0720313ea7d
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"
