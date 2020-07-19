@@ -1,0 +1,39 @@
+_id: req_cc2ad88ea73d4ea7a7863991eb5c169d
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query mission($id: String!) {\n  mission(id: $id)
+    {\n    missionName\n    missionStatus {\n      label\n    }\n    leadPartner
+    {\n      lastName\n      firstName\n    }\n    entity
+    {\n      entityName\n      entityStatus
+    {\n        label\n      }\n      entityLeadPartner
+    {\n        lastName\n        firstName\n      }\n      legalForm
+    {\n        countryCode\n      }\n      uniqueGlobalNumber\n      sector
+    {\n        sectorName\n      }\n      subSector
+    {\n        subsectorName\n      }\n    }\n    typeOfServiceObj
+    {\n      label\n    }\n\t\tteams {\n      items
+    {\n        id\n        teamType
+    {\n          name\n          typeOfTeamId\n        }\n        members
+    {\n          items {\n            id\n            roleId\n            user
+    {\n              userId\n              lastName\n              firstName\n              emailAddress\n            }\n            isIndependenceConfirmed\n          }\n        }\n      }\n\t\t}\n  }\n}\n","variables":{"id":"MSN-0000105530"},"operationName":"mission"}'
+created: 1595140431043
+description: ""
+headers:
+  - id: pair_48f07c89caaa45748b089c79da23994b
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1595140431043
+method: POST
+modified: 1595140510634
+name: mission item
+parameters: []
+parentId: fld_f4ebb75fe74540aaa406a0720313ea7d
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

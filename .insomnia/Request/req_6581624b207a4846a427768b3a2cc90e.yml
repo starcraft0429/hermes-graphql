@@ -23,7 +23,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594922238596
 method: POST
-modified: 1595065732509
+modified: 1595138713290
 name: upsertTrialBalance (WIP)
 parameters:
   - description: ""
