@@ -1,0 +1,30 @@
+_id: req_70c7efdd0ec646e3b4d59cbcc81e3807
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation updateMissionMemberRole(\n  $member:
+    MExaMissionCardMemInput!,\n  $memRoleInTeam: String!,\n)
+    {\n  updateMissionMemberRole(\n    member: $member,\n    memRoleInTeam:
+    $memRoleInTeam,\n  ) {    \n    id\n    roleId\n    user
+    {\n      userId\n      lastName\n      firstName\n      emailAddress\n    }\n    isIndependenceConfirmed\n  }\n}","variables":{"member":{"missionId":"MSN-0000105530","memberId":"6afb077b-84de-4d34-abb2-ee768cb6bf50"},"memRoleInTeam":"3"},"operationName":"updateMissionMemberRole"}'
+created: 1595158845019
+description: ""
+headers:
+  - id: pair_924bdf042f504d969ef833fce3b4b75c
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1595158845019
+method: POST
+modified: 1595159232110
+name: updateMemberRole
+parameters: []
+parentId: fld_f4ebb75fe74540aaa406a0720313ea7d
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"
