@@ -3,11 +3,11 @@ authentication: {}
 body:
   mimeType: application/graphql
   text: '{"query":"query getFSAs(\n  $frmId: String!,\n  $search:
-    String,\n  $isLocalMode: Boolean!,\n  $country: MExdCountryInput!\n)
+    String,\n  $isLocalMode: Boolean!,\n  $countryId: Int!\n)
     {\n  fsas(\n    frmId: $frmId,\n    search: $search,\n    isLocalMode:
-    $isLocalMode,\n    country: $country,\n  ) {\n    count\n    items
+    $isLocalMode,\n    countryId: $countryId,\n  ) {\n    count\n    items
     {\n      fsaId,\n      fsaName,\n      type,\n      status,\n      country{\n        countryId\n        name\n      }\n      framework{\n        frmId\n        framework\n      }\n      sectors{\n        sectorId,\n        sectorName\n      }\n      subsectors{\n        subsectorId\n        subsectorName\n      }\n    }
-    \n  }\n}","variables":{"frmId":"1","isLocalMode":true,"country":{"id":1}},"operationName":"getFSAs"}'
+    \n  }\n}","variables":{"frmId":"1","isLocalMode":true,"countryId":0},"operationName":"getFSAs"}'
 created: 1593839840004
 description: ""
 headers:
@@ -17,7 +17,7 @@ headers:
 isPrivate: false
 metaSortKey: -1593839840004
 method: POST
-modified: 1595228107199
+modified: 1595228406220
 name: GetFSAs
 parameters: []
 parentId: fld_9fcf6558361c43f59be9c7a8198c5907
