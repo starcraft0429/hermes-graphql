@@ -2,9 +2,10 @@ _id: req_f03b0a8510e5476dad496735b8a47f83
 authentication: {}
 body:
   mimeType: application/graphql
-  text: '{"query":"mutation updateFsaSort($fsas: [MExdFsaIfrLibInput!]!)
-    {\n  updateFsaSort(fsas:
-    $fsas)\n}","variables":{"fsas":[{"fsaId":"197-FSA-141056"}]},"operationName":"updateFsaSort"}'
+  text: '{"query":"mutation updateFsaSort(\n  $fsas:
+    [MExdFsaIfrLibInput!]!\n  $isSubFsa: Boolean,\n)
+    {\n  updateFsaSort(\n    fsas: $fsas\n    isSubFsa:
+    $isSubFsa\n  )\n}","variables":{"fsas":[{"fsaId":"197-FSA-141056"}]},"operationName":"updateFsaSort"}'
 created: 1595229928891
 description: ""
 headers:
@@ -14,7 +15,7 @@ headers:
 isPrivate: false
 metaSortKey: -1595229928891
 method: POST
-modified: 1595230130971
+modified: 1595232025525
 name: updateFsaSort
 parameters: []
 parentId: fld_9fcf6558361c43f59be9c7a8198c5907
