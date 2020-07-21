@@ -3,22 +3,22 @@ authentication: {}
 body:
   mimeType: application/graphql
   text: '{"query":"mutation upsertFsa(\n  $id: String,\n  $fsaName:
-    String!,\n  $fsaIndex: Int!,\n  $status: String!,\n  $country:
-    MExdCountryInput,\n  $sectors: String,\n  $subsectors:
-    String,\n  $framework: MExdFrameworkInput,\n  $categories:
-    String,\n  $sections: String,\n  $partSections: String,\n  $centralFsas:
-    String,\n  $material: String,\n  $isActive: Boolean!,\n  $analyticalReviews:
+    String!,\n  $status: String!,\n  $country: MExdCountryInput,\n  $sectors:
+    String,\n  $subsectors: String,\n  $framework:
+    MExdFrameworkInput,\n  $categories: String,\n  $sections:
+    String,\n  $partSections: String,\n  $centralFsas: String,\n  $material:
+    String,\n  $isActive: Boolean!,\n  $analyticalReviews:
     [MExdFsaAnalyticalRevInput!],\n  $isSubFsa: Boolean,\n  $fsaParentId:
     String,\n) {\n  upsertFsa(\n    id: $id,\n    fsaName:
-    $fsaName,\n    fsaIndex: $fsaIndex,\n    status: $status,\n    country:
-    $country,\n    sectors: $sectors,\n    subsectors:
-    $subsectors,\n    framework: $framework,\n    categories:
-    $categories,\n    sections: $sections,\n    partSections:
-    $partSections,\n    centralFsas: $centralFsas,\n    material:
-    $material,\n    isActive: $isActive,\n    analyticalReviews:
-    $analyticalReviews,\n    isSubFsa: $isSubFsa,\n    fsaParentId:
-    $fsaParentId\n  ) {\n    fsaId\n  }\n}","variables":{"fsaName":"create
-    fsa","fsaIndex":123123,"status":"1","country":{"id":1},"sectors":"SECTOR-100003","subsectors":"SUBSECTOR-100003","framework":{"frmId":"1"},"categories":"30-CAT-117448","sections":"SECTION-100012,SECTION-100013","centralFsas":"1-FSA-147303","material":"Y","isActive":true},"operationName":"upsertFsa"}'
+    $fsaName,\n    status: $status,\n    country: $country,\n    sectors:
+    $sectors,\n    subsectors: $subsectors,\n    framework:
+    $framework,\n    categories: $categories,\n    sections:
+    $sections,\n    partSections: $partSections,\n    centralFsas:
+    $centralFsas,\n    material: $material,\n    isActive:
+    $isActive,\n    analyticalReviews: $analyticalReviews,\n    isSubFsa:
+    $isSubFsa,\n    fsaParentId: $fsaParentId\n  )
+    {\n    fsaId\n  }\n}","variables":{"fsaName":"create
+    fsa","status":"1","country":{"id":1},"sectors":"SECTOR-100003","subsectors":"SUBSECTOR-100003","framework":{"frmId":"1"},"categories":"30-CAT-117448","sections":"SECTION-100012,SECTION-100013","centralFsas":"1-FSA-147303","material":"Y","isActive":true},"operationName":"upsertFsa"}'
 created: 1594486420096
 description: ""
 headers:
@@ -28,7 +28,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594486420096
 method: POST
-modified: 1595228392500
+modified: 1595305062560
 name: upsertFsa
 parameters: []
 parentId: fld_9fcf6558361c43f59be9c7a8198c5907
