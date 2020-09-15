@@ -1,0 +1,29 @@
+_id: req_327a30df60664d1fa6eb0127af52246b
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation activateCentralMasterfile(\n  $centralMasterfile:
+    CentralMasterfileInput!\n)
+    {\n  activateCentralMasterfile(\n    centralMasterfile:
+    $centralMasterfile\n  ){\n    id\n  }\n}","variables":{"centralMasterfile":{"id":"a8fd4bea-c12c-455a-9fd8-cdb69bb6c91c"}},"operationName":"activateCentralMasterfile"}'
+created: 1598421499801
+description: ""
+headers:
+  - id: pair_bebcef7d57a840eba9ed3b26e15b91ff
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1598421499801
+method: POST
+modified: 1598922294232
+name: ActivateCentralMasterfile
+parameters: []
+parentId: fld_2cfdec782bdc47719fbef445faf4b2c8
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{base_url}}"

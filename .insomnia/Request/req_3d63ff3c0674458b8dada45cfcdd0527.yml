@@ -1,0 +1,31 @@
+_id: req_3d63ff3c0674458b8dada45cfcdd0527
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation assignUserNotification(\n  $user:
+    SiUserTInput!,\n  $checklist: NodeInput!,\n  $question: String!,\n  $url:
+    String!,\n) {\n  assignUserNotification(\n    user: $user,\n    checklist:
+    $checklist,\n    question: $question,\n    url:
+    $url\n  )\n}","variables":{"user":{"userId":100002},"checklist":{"id":"8c8858c8-ebe7-11ea-9596-0242ac170003"},"question":"my
+    question","url":"http://hermes.localhost/engagements/MSN-0000105534/checklist/checklist_1"},"operationName":"assignUserNotification"}'
+created: 1599742931227
+description: ""
+headers:
+  - id: pair_b04d3d1e15c14948b13dfde4c84ff96b
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1599742931227
+method: POST
+modified: 1599836773771
+name: assignUserNotification
+parameters: []
+parentId: fld_6ff64af210d04849be811c935662b76e
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{base_url}}"

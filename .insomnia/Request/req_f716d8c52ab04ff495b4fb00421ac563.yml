@@ -12,21 +12,23 @@ body:
     String,\n  $missionDesc: String,\n  $dateOfFirstAssignment:
     DateTime,\n  $isFirstYearsAudit: Boolean,\n  $dateOfRenewal:
     DateTime,\n  $wonThroughTender: Boolean,\n  $accountFramework:
-    MExdFrameworkInput,\n) {\n  upsertEngagement(\n    missionCard:
-    $missionCard,\n    entity: $entity,\n    missionName:
-    $missionName,\n    leadPartner: $leadPartner,\n    masterFile:
-    $masterFile,\n    endDate: $endDate,\n    officeObj:
-    $officeObj,\n    managementUnit: $managementUnit,\n    engagementType:
-    $engagementType,\n    typeOfService: $typeOfService,\n    backOfficeJobNo:
+    MExdFrameworkInput,\n  $localMasterfile: LocalMasterfileInput,\n)
+    {\n  upsertEngagement(\n    missionCard: $missionCard,\n    entity:
+    $entity,\n    missionName: $missionName,\n    leadPartner:
+    $leadPartner,\n    masterFile: $masterFile,\n    endDate:
+    $endDate,\n    officeObj: $officeObj,\n    managementUnit:
+    $managementUnit,\n    engagementType: $engagementType,\n    typeOfService:
+    $typeOfService,\n    backOfficeJobNo:
     $backOfficeJobNo,\n    regulatorNumber: $regulatorNumber,\n    missionDesc:
     $missionDesc,\n    dateOfFirstAssignment:
     $dateOfFirstAssignment,\n    isFirstYearsAudit:
     $isFirstYearsAudit,\n    dateOfRenewal:
     $dateOfRenewal,\n    wonThroughTender:
-    $wonThroughTender,\n    accountFramework: $accountFramework,\n  )
-    {\n    id\n  }\n}\n","variables":{"missionCard":{"missionId":"e0eb733d-d5af-4287-9e04-99c8f63b108e"},"entity":{"entityId":"ENTITY-007743"},"missionName":"Create
+    $wonThroughTender,\n    accountFramework:
+    $accountFramework,\n    localMasterfile: $localMasterfile,\n  )
+    {\n    id\n  }\n}\n","variables":{"missionCard":{"missionId":"MSN-0000105534"},"entity":{"entityId":"ENTITY-008371"},"missionName":"Create
     Engagement","leadPartner":{"userId":100041},"masterFile":{"id":"LOCAL_CMF-103376"},"endDate":"2020-02-11T00:00:00+00:00","officeObj":{"id":"9648","localeId":1009},"managementUnit":{"unitId":"16","officeId":"9648"},"engagementType":"110","typeOfService":"5","backOfficeJobNo":"backJob1111","regulatorNumber":"reglar-111","missionDesc":"help
-    desc","dateOfFirstAssignment":"2020-02-11T00:00:00+00:00","isFirstYearsAudit":false,"dateOfRenewal":null,"wonThroughTender":null,"accountFramework":{"frmId":"1"}},"operationName":"upsertEngagement"}'
+    desc","dateOfFirstAssignment":"2020-02-11T00:00:00+00:00","isFirstYearsAudit":false,"dateOfRenewal":null,"wonThroughTender":null,"accountFramework":{"frmId":"1"},"localMasterfile":{"id":"1439cd1e-f675-11ea-9ac8-0242ac130004"}},"operationName":"upsertEngagement"}'
 created: 1594884171805
 description: ""
 headers:
@@ -36,7 +38,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594884171805
 method: POST
-modified: 1597923538880
+modified: 1600084470112
 name: upsertEngagement
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1

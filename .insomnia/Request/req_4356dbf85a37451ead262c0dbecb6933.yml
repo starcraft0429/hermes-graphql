@@ -1,0 +1,28 @@
+_id: req_4356dbf85a37451ead262c0dbecb6933
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query localMasterfile($id: String!) {\n  localMasterfile(id:
+    $id)
+    {\n    id\n    label\n    version\n    draft\n    centralMasterfile{\n      id\n      label\n      version\n      draft\n    }\n    nodes{\n      items{\n        id\n        parentNode{\n          id\n        }\n        previousNode{\n          id\n        }\n        nextNode{\n          id\n        }\n        label\n        humanId\n        inheritance\n        type\n        data\n      }\n    }\n  }\n}","variables":{"id":"a3d749c8-9d4b-45b1-a493-c2ba3aa03748"},"operationName":"localMasterfile"}'
+created: 1599123396286
+description: ""
+headers:
+  - id: pair_b5619ee2a8f242e5b03f5ab6c71754ec
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1599123396286
+method: POST
+modified: 1599846752228
+name: GetLocalMasterFile
+parameters: []
+parentId: fld_2cfdec782bdc47719fbef445faf4b2c8
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

@@ -1,0 +1,29 @@
+_id: req_460c498604bd49ffb4586272f9233079
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query users(\n  $search: String!\n  $limit: Int!\n  $offset:
+    Int!\n) {\n  users(search: $search) {\n    count\n    items(limit: $limit,
+    offset:
+    $offset){\n      userId\n      userName\n    }\n  }\n}","variables":{"search":"per","limit":10,"offset":0},"operationName":"users"}'
+created: 1599732397388
+description: ""
+headers:
+  - id: pair_4cc10925ba5e48898ef420a53eb90fc2
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1599732397388
+method: POST
+modified: 1599743089605
+name: getUsers
+parameters: []
+parentId: fld_6ff64af210d04849be811c935662b76e
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{base_url}}"

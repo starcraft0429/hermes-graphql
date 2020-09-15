@@ -3,10 +3,11 @@ authentication: {}
 body:
   mimeType: application/graphql
   text: '{"query":"query GetEngagament($id: String!) {\n  engagement(id: $id)
-    {\n    id\n    entity
-    {\n      entityId\n    }\n    missionName\n    leadPartner{\n      userId\n      userName\n    }\n    masterFile
+    {\n    id\n    entity {\n      entityId\n      sector
+    {\n        sectorId\n      }\n      subSector
+    {\n        subsectorId\n      }\n    }\n    missionName\n    leadPartner{\n      userId\n      userName\n    }\n    masterFile
     {\n      id\n      name\n      country\n    }\n    endDate\n    officeObj{\n      id\n      localeId\n      name\n    }\n    managementUnit{\n      name\n      unitId\n      officeId\n    }\n    engagementType\n    typeOfService\n    backOfficeJobNo\n    regulatorNumber\n    missionDesc\n    dateOfFirstAssignment\n    isFirstYearsAudit\n    dateOfRenewal\n    wonThroughTender\n    accountFramework{\n      frmId\n      framework\n    }\n    status
-    {\n      id\n      label\n    }\n    msex\n  }\n}\n","variables":{"id":"MSN-0000105530"},"operationName":"GetEngagament"}'
+    {\n      id\n      label\n    }\n    localMasterfile{\n      id\n      label\n      version\n      draft\n      centralMasterfile{\n        id\n        label\n        version\n        draft\n      }\n      nodes{\n        items{\n          id\n          parentNode{\n            id\n          }\n          previousNode{\n            id\n          }\n          nextNode{\n            id\n          }\n          label\n          humanId\n          inheritance\n          type\n          data\n          nodeSectors{\n            items{\n              id\n              sector{\n                sectorId\n                sectorName\n              }\n              subsector{\n                subsectorId\n                subsectorName\n              }\n            }\n          }\n          frameworks{\n            frmId\n            framework\n          }\n        }\n      }      \n    }\n  }\n}\n","variables":{"id":"MSN-0000105534"},"operationName":"GetEngagament"}'
 created: 1594804566558
 description: ""
 headers:
@@ -16,7 +17,7 @@ headers:
 isPrivate: false
 metaSortKey: -1594804566558
 method: POST
-modified: 1594989390908
+modified: 1600087385909
 name: engagement.query
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1

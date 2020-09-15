@@ -1,0 +1,28 @@
+_id: req_fafe9615945e4874836d06cc0348fe32
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation deleteAllNodes(\n  $centralMasterfile:
+    CentralMasterfileInput!\n) {\n  deleteAllNodes(\n    centralMasterfile:
+    $centralMasterfile\n  )\n}","variables":{"centralMasterfile":{"id":"a8fd4bea-c12c-455a-9fd8-cdb69bb6c91c"}},"operationName":"deleteAllNodes"}'
+created: 1598664036680
+description: ""
+headers:
+  - id: pair_ad9ebd9e69e34c89b4d0f45c1e3d8998
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1598664036680
+method: POST
+modified: 1598922305085
+name: deleteAllNodes
+parameters: []
+parentId: fld_7959cf5cdc3b4a6bbcaebdaf44056338
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{base_url}}"
