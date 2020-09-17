@@ -3,12 +3,12 @@ authentication: {}
 body:
   mimeType: application/graphql
   text: '{"query":"mutation upsertEngagementFieldAnswer(\n  $mExaMissionCard:
-    MExaMissionCardInput!,\n  $nodeHumanId: String!,\n  $masterfileId:
-    String!\n  $fieldHumanId: String!,\n  $data: String!,\n)
+    MExaMissionCardInput!,\n  $nodeHumanId: String!,\n  $fieldHumanId:
+    String!,\n  $data: String!,\n)
     {\n  upsertEngagementFieldAnswer(\n    mExaMissionCard:
-    $mExaMissionCard,\n    nodeHumanId: $nodeHumanId,\n    masterfileId:
-    $masterfileId,\n    fieldHumanId: $fieldHumanId,\n    data:
-    $data\n  ){\n    id\n  }\n}","variables":{"mExaMissionCard":{"missionId":"MSN-0000105534"},"nodeHumanId":"ck_1_lmf_AFGHANISTAN","masterfileId":"6bc6858e-f730-11ea-8477-0242ac130008","fieldHumanId":"my_field_1_1","data":"\"No\""},"operationName":"upsertEngagementFieldAnswer"}'
+    $mExaMissionCard,\n    nodeHumanId: $nodeHumanId,\n    fieldHumanId:
+    $fieldHumanId,\n    data:
+    $data\n  ){\n    id\n  }\n}","variables":{"mExaMissionCard":{"missionId":"MSN-0000105534"},"nodeHumanId":"ck_1_lmf_AFGHANISTAN","fieldHumanId":"my_field_1_1","data":"\"No\""},"operationName":"upsertEngagementFieldAnswer"}'
 created: 1600153159975
 description: ""
 headers:
@@ -18,7 +18,7 @@ headers:
 isPrivate: false
 metaSortKey: -1600153159975
 method: POST
-modified: 1600161065928
+modified: 1600161876119
 name: upsertEngagementFieldAnswer
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1

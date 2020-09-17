@@ -3,11 +3,12 @@ authentication: {}
 body:
   mimeType: application/graphql
   text: '{"query":"mutation upsertNode(\n  $id: String,\n  $masterfile:
-    MasterfileInput!,\n  $label: String!,\n  $isSection: Boolean!\n)
-    {\n  upsertNode(\n    id: $id,\n    masterfile: $masterfile,\n    label:
-    $label,\n    isSection: $isSection\n  ) {\n    id\n    parentNode
-    {\n      id\n    }\n    previousNode {\n      id\n    }\n    nextNode
-    {\n      id\n    }\n    label\n    humanId\n    inheritance\n    type\n    data\n  }\n}\n","variables":{"masterfile":{"id":"a8fd4bea-c12c-455a-9fd8-cdb69bb6c91c"},"label":"section-5-5","isSection":false},"operationName":"upsertNode"}'
+    MasterfileInput!,\n  $label: String!,\n  $type: String!,\n  $form:
+    FormInput,\n) {\n  upsertNode(\n    id: $id,\n    masterfile:
+    $masterfile,\n    label: $label,\n    type: $type,\n    form: $form\n  )
+    {\n    id\n    parentNode {\n      id\n    }\n    previousNode
+    {\n      id\n    }\n    nextNode
+    {\n      id\n    }\n    label\n    humanId\n    inheritance\n    type\n    datas,\n    role{\n      name,\n      typeOfTeamId\n    }\n    form{\n      id\n      label\n      formUrl\n    }\n  }\n}\n","variables":{"masterfile":{"id":"a8fd4bea-c12c-455a-9fd8-cdb69bb6c91c"},"label":"section-5-5","type":"leaf"},"operationName":"upsertNode"}'
 created: 1598299358826
 description: ""
 headers:
@@ -17,7 +18,7 @@ headers:
 isPrivate: false
 metaSortKey: -1598299358826
 method: POST
-modified: 1599989069950
+modified: 1600353711264
 name: UpsertNode
 parameters: []
 parentId: fld_7959cf5cdc3b4a6bbcaebdaf44056338

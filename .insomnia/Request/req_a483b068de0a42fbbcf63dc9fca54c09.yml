@@ -1,0 +1,27 @@
+_id: req_a483b068de0a42fbbcf63dc9fca54c09
+authentication: {}
+body:
+  mimeType: application/graphql
+  text: '{"query":"query forms {\n  forms
+    {\n    count\n    items{\n      id\n      label\n      formUrl\n    }\n  }\n}","operationName":"forms"}'
+created: 1600327210921
+description: ""
+headers:
+  - id: pair_002fe26b8c4f4442bdf91208ff098b09
+    name: Content-Type
+    value: application/json
+isPrivate: false
+metaSortKey: -1600327210921
+method: POST
+modified: 1600327267114
+name: getForms
+parameters: []
+parentId: fld_7776441f35af41c9af126d2cadf0a716
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingFollowRedirects: global
+settingRebuildPath: true
+settingSendCookies: true
+settingStoreCookies: true
+type: Request
+url: "{{ base_url  }}"

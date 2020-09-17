@@ -3,12 +3,11 @@ authentication: {}
 body:
   mimeType: application/graphql
   text: '{"query":"query engagementNodeFromHumanId(\n  $mExaMissionCard:
-    MExaMissionCardInput!,\n  $nodeHumanId: String!,\n  $masterfileId:
-    String!\n) {\n  engagementNodeFromHumanId(\n    mExaMissionCard:
-    $mExaMissionCard,\n    nodeHumanId: $nodeHumanId,\n    masterfileId:
-    $masterfileId\n  )
+    MExaMissionCardInput!,\n  $nodeHumanId: String!\n)
+    {\n  engagementNodeFromHumanId(\n    mExaMissionCard:
+    $mExaMissionCard,\n    nodeHumanId: $nodeHumanId\n  )
     {\n    id\n    parentNode{\n      id\n    }\n    previousNode{\n      id\n    }\n    nextNode{\n      id\n    }\n    label\n    humanId\n    inheritance\n    type\n    data\n    masterfile{\n      id,\n      label,\n      version,\n      draft
-    \n    }\n  }\n}","variables":{"mExaMissionCard":{"missionId":"MSN-0000105534"},"nodeHumanId":"ck_4","masterfileId":"6bc6858e-f730-11ea-8477-0242ac130008"},"operationName":"engagementNodeFromHumanId"}'
+    \n    }\n  }\n}","variables":{"mExaMissionCard":{"missionId":"MSN-0000105534"},"nodeHumanId":"ck_1_lmf_AFGHANISTAN"},"operationName":"engagementNodeFromHumanId"}'
 created: 1600149851185
 description: ""
 headers:
@@ -18,7 +17,7 @@ headers:
 isPrivate: false
 metaSortKey: -1600149851185
 method: POST
-modified: 1600161057120
+modified: 1600293274336
 name: getEngagementNodeFromHumanId
 parameters: []
 parentId: fld_c755b2f82d374f21b71a7b9193abcaf1
